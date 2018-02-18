@@ -1,0 +1,5 @@
+#! /bin/bash
+
+COMMANDS=("${HOME}/bin/space-invaders" "cowfortune" "neofetch" "figlet welcome.home" "${HOME}/bin/vman")
+$(shuf -n1 -e "${COMMANDS[@]}")
+

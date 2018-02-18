@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+## script to toggle between monitor modes
+
+currentmonitor=$(xrandr | awk '/\ connected/ && /[[:digit:]]x[[:digit:]].*+/{print $1}')
+double=$'eDP-1\HDMI-2'
+right=$'eDP-1'
+left=$'HDMI-2'
+
+if [ "$currentmonitor" = "$double" ]; then
+    xrandr --output $right --auto --primary --output $left --off
+    notify-send  "HDMI MONITOR" "RIGHT"
+elif [ "$currentmonitor" = "$right" ]; then
+    xrandr --output $left --auto --primary --output $right --off
+    notify-send  "LAPTOP MONITOR" "LEFT"
+else
+    xrandr --output $left --off --output $right --auto --right-of $left
+    notify-send  "HDMI MONITOR" "RIGHT"
+fi
+
+exit 0

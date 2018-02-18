@@ -1,0 +1,56 @@
+[options]
+scroll_on_output    = false
+scroll_on_keystroke = true
+audible_bell        = false
+mouse_autohide      = false
+allow_bold          = true
+dynamic_title       = true
+urgent_on_bell      = true
+clickable_url       = true
+font                = xos4 Terminus 12
+scrollback_lines    = 10000
+search_wrap         = true
+icon_name           = utilities-terminal
+geometry            = 1050x650
+clickable_url       = true
+cursor_blink        = system
+cursor_shape        = block
+browser             = exo-open
+filter_unmatched_urls = true
+
+[colors]
+background      = rgba(35,20,23,0.85)
+foreground      = #d7fafa
+foreground_bold = #A9A9A9
+cursor          = #ff0067
+
+# Black, Gray, Silver, White
+color0  = #eee8d5
+color8 = #002b36
+color7 = #eee8d5
+color15 = #fdf6e3
+
+# Red
+color1 = #dc322f
+color9 = #cb4b16
+
+# Green
+color2 = #859900
+color10 = #586e75
+
+# Yellow
+color3 = #b58900
+color11 = #657b83
+
+# Blue
+color4 = #268bd2
+color12 = #839496
+
+# Purple
+color5 = #d33682
+color13 = #6c71c4
+
+# Teal
+color6 = #2aa198
+color14 = #93a1a1
+

@@ -1,0 +1,24 @@
+#rofi.theme: /usr/share/rofi/themes//c64.rasi
+rofi.modi: drun,run,window
+#rofi.show: drun
+rofi.show-icons: true
+rofi.eh: 1
+rofi.lines: 7
+rofi.line-padding: 5
+rofi.padding: 30
+rofi.font: xos4 Terminus 12
+rofi.color: disabled
+rofi.sidebar-mode: true
+rofi.case-sensitive: false
+rofi.fake-transparency: false
+rofi.width: 30
+rofi.line-margin: 6
+rofi.separator-style: solid
+rofi.sidebar-mode: true
+rofi.display-drun:   drun  >
+rofi.display-run:   run  >
+rofi.display-window:   window  >
+
+
+# Wal Theme.
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi

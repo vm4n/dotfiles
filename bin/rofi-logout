@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+question=$(echo "		lock|		logout|		reboot|		shutdown" | rofi -sep "|" \
+    -dmenu -i -p 'System: ' "" -width 20 -hide-scrollbar -font "xos4 Terminus 12" \
+    -eh 1 -line-padding 4 -padding 20 -lines 4 -color-enabled)
+
+case $question in
+    *lock)
+        i3lock-fancy
+        ;;
+    *logout)
+        i3-msg exit
+        ;;
+    *reboot)
+        systemctl reboot
+        ;;
+    *shutdown)
+        systemctl poweroff
+        ;;
+    *)
+        exit 0  # do nothing on wrong response
+        ;;
+esac
